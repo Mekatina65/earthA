@@ -1,11 +1,18 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link'
+import Footer from '../comp/footer';
+import Navbar from '../comp/navbar';
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-     <h1>Hello from Richie</h1>
-    </div>
-  )
+const Home = () => {
+  return ( 
+
+    <div>
+    <Navbar />
+        <Link a href="/cont/northamerica"><a> North America</a></Link> <br />
+        <Link a href="/cont/southamerica"><a> South America</a></Link>
+    <Footer />
+        </div>
+   );
 }
+ 
+export default Home;
